@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewPlaceActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <!-- image -->
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_margin="16dp">
+
+            <!-- place name -->
+            <TextView
+                android:id="@+id/nameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name here"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- place address -->
+            <TextView
+                android:id="@+id/addressTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adress here"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <!-- place open hour -->
+            <TextView
+                android:id="@+id/openHourTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open now : "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- rating -->
+            <RatingBar
+                android:id="@+id/placeRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="5" />
+
+            <!-- show on map -->
+            <Button
+                android:id="@+id/showBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show on Map"
+                style="@style/Widget.AppCompat.Button.Colored" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
